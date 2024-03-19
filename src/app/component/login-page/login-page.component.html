@@ -1,0 +1,50 @@
+<title>Sign in - Google Account</title>
+<div class="Layout-container">
+<div class="Layout">
+    <div class="Layout1">
+        <div class="GoogleImageLogoDiv">
+            <img src="../../../assets/AppLogos/GoogleLogoG.jpg" class="GoogleImageLogo">
+        </div>
+        <div class="SigninTextDiv">
+            <p class="SignInText">
+                Sign in
+            </p>
+        </div>
+        <div class="UseGoogleAcountDiv">
+            <p class="UseGoogleAcount">
+                Use Your Google Acount
+            </p>
+        </div>
+    </div>
+    <div class="Layout2">
+      <form #Form>
+        <div class="EmailInputDiv">
+          <label for="Email" class="EmailLabel">Email</label>
+          <input type="email" [(ngModel)]="loginobj.user_Email" name="EmailId" placeholder="Email Or Phone" class="EmailInput" required>
+        </div>
+        <div class="EmailInputDiv">
+          <label for="Password"  name="Password" class="PasswordLabel">Password</label>
+          <input type="password" [(ngModel)]="loginobj.user_Passwords" name="Password" placeholder="Password" class="EmailInput" required>
+        </div>
+        <div class="ForgotEmailDiv">
+            <button type="button" class="ForgetEmailButton">
+              <a href="">
+                Forgot email?
+              </a>
+            </button>
+        </div>
+        <div class="CreateNextButtons">
+          <div>
+            <button type="button" class="CreateAccount">
+              Create account
+            </button>
+          </div>
+          <div class="NextButtonDiv">
+            <button type="submit" class="NextButton" (click)="OnNext()">
+              Next
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
