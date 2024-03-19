@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -12,15 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class LoginPageComponent {
   loginobj:login;
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient, private router: Router){
     this.loginobj = new login;
   }
 
   OnNext(){
-    debugger;
+    // debugger;
     this.http.post("https://localhost:44347/api/User/Login",this.loginobj).subscribe((response:any) => {
       if (response.result){
-        alert("Login Successfull")
+        alert("Login Successfull");
+        this.router.navigateByUrl('/dashboard');
       }
       else{
         alert(response.message)
