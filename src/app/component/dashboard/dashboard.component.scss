@@ -105,8 +105,13 @@ body
     background-color: rgb(234, 234, 234);
     border-width: 0px;
     border-radius: 20px;
-    margin-left: 10px;
+    padding-left: 20px;
     font-size: 15px;
+}
+
+.SearchBar::placeholder
+{
+  padding-left: 10px;
 }
 .SearchBar:hover
 {
