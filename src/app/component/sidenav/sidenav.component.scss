@@ -1,0 +1,294 @@
+*
+{
+    font-family: sans-serif;
+}
+
+body
+{
+    margin: 0px;
+    height: 80vh;
+    padding-top: 80px;
+    // background-color: rgb(244, 244, 244);
+    background-color: white;
+}
+
+.Dashboard
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 10px;
+}
+
+.LeftHandSideComponent
+{
+    display: grid;
+    grid-template-columns: 30px 100px;
+    /* background-color: red; */
+    align-content: center;
+    align-items: center;
+    vertical-align: middle  ;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.BrowseLogo
+{
+    padding:8px;
+    margin-right: 5px;
+    transition: 0.50s;
+}
+
+.BrowseLogo:hover
+{
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    border-radius: 30px;
+}
+
+.GoogleKeepLogo
+{
+    margin-left: 20px;
+    width:100px;
+    cursor: pointer;
+}
+
+.MiddleComponent
+{
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-content: start;
+    margin-right: auto;
+}
+
+.SearchBarDiv
+{
+    display: flex;
+    align-items: center;
+    align-content: start;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.SearchIcon
+{
+    margin-left: 10px;
+    width: 20px;
+}
+
+.SearchIcon:hover
+{
+    cursor: pointer;
+}
+
+.SearchBar
+{
+    flex: 1;
+    height: 31px;
+    background-color: rgb(234, 234, 234);
+    border-width: 0px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.SearchBar:hover
+{
+    background-color: rgb(234, 234, 234);
+}
+
+.SearchBar:focus
+{
+    outline: none;
+}
+
+.SearchBar:active
+{
+    background-color: rgb(234,234,234);
+    border: none;
+    border-color: rgb(234, 234, 234);
+}
+
+.RightHandSideComponent
+{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ReloadImageIcon,.DoubleListIcon,.AllAppsIcon
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    padding:8px;
+    transition: 0.50s;
+    border-radius: 15px;
+}
+.AllAppsIcon
+{
+    width:20px;
+    height: 20px
+}
+
+.AllAppsIcon:hover,.ReloadImageIcon:hover
+{
+    background-color: rgb(210, 206, 206);
+}
+.AllAppsIcon:active,.ReloadImageIcon:active
+{
+    background-color: white;
+}
+
+.DoubleListIcon:hover
+{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(210, 206, 206);
+}
+
+.DoubleListIcon:active
+{
+    background-color: white;
+}
+
+.SettingsIcon
+{
+    height: 25px;
+    width: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+    padding: 4px;
+    transition: 0.50s;
+    border-radius: 15px;
+}
+
+.SettingsIcon:hover
+{
+    background-color: rgb(210, 206, 206);
+}
+
+.SettingsIcon:active
+{
+    background-color: white;
+}
+
+.SignInButton
+{
+    height: 50px;
+    width: 100px;
+    background-color: rgba(74,138,244,255);
+    color: white;
+    border-radius: 4px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: 0.30s;
+    margin-right: 20px;
+}
+
+.SignInButton:hover
+{
+    background-color: grey ;
+}
+
+.SignInButton:active
+{
+    background-color: white;
+    color: rgba(74,138,244,255);
+}
+
+
+.SideNavigationBar
+{
+    background-color:white;
+    top: 71px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-right: 0px;
+    transition: 0.1s;
+}
+
+.SideNavigationBar:hover
+{
+    width: 300px;
+    overflow: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.NotesDiv,
+.NotificationDiv,
+.LabelDiv,
+.EditDiv,
+.ArchieveDiv,
+.DeleteDiv
+{
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.NotesDiv:hover,
+.NotificationDiv:hover,
+.LabelDiv:hover,
+.EditDiv:hover,
+.ArchieveDiv:hover,
+.DeleteDiv:hover
+{
+    background-color: grey;
+}
+
+.NotesDiv:active,
+.NotificationDiv:active,
+.LabelDiv:active,
+.EditDiv:active,
+.ArchieveDiv:active,
+.DeleteDiv:active
+{
+    background-color: rgb(249, 223, 165);
+
+}
+
+
+.Nav-Lighbulb,
+.Nav-notification,
+.LabelIcon,
+.editicon,
+.ArchieveIcon,
+.DeleteIcon
+{
+    height: 25px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.nav-notes-text,
+.nav-reminder-text,
+.LabelText,
+.EditText,
+.ArchiveText,
+.DeleteText
+{
+    padding-top: 2px;
+    width: fit-content;
+    margin: 0;
+}
