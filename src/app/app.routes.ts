@@ -17,8 +17,8 @@ export const routes: Routes = [
       component:GoogleAppComponentComponent,
       children:[{
         // Child Components
-        path:'dashboard',
-        component:DashboardComponent
+      path:'dashboard',
+      component:DashboardComponent,
       }]
     }
 ];
