@@ -1,0 +1,84 @@
+<div class="AddNotes">
+  <ng-container class="Layout1" *ngIf="!showContainer">
+    <div class="layout">
+      <div class="TitleDiv">
+        <input type="text" class="Titleinput" placeholder="Title">
+        <img src="../../../assets/Icons/AddNotesIcons/icons8-pin-24 (1).png" class="PinIcon">
+      </div>
+      <div class="DescriptionDiv">
+        <input type="text" class="DescriptionInput" placeholder="Take a note">
+      </div>
+      <div class="AllIconsDiv">
+        <div class="RemindMeDiv">
+          <button class="buttons">
+          <img src="../../../assets/Icons/AddNotesIcons/notifications_FILL0_wght400_GRAD0_opsz24 (1).svg" class="RemindMeIcon">
+          </button>
+        </div>
+        <div class="AddPersonDiv">
+          <button class="buttons">
+          <img src="../../../assets/Icons/AddNotesIcons/person_add_FILL0_wght400_GRAD0_opsz24.svg" class="AddPersonIcon">
+          </button>
+        </div>
+        <div class="AddColorDiv">
+          <button class="buttons">
+            <img src="../../../assets/Icons/AddNotesIcons/palette_FILL0_wght400_GRAD0_opsz24.svg" class="AddColorIcon">
+          </button>
+        </div>
+        <div class="AddImageDiv">
+          <button class="buttons">
+          <img src="../../../assets/Icons/AddNotesIcons/image_FILL0_wght400_GRAD0_opsz24.svg" class="AddImageIcon">
+          </button>
+        </div>
+        <div class = "ArchieveNoteDiv">
+          <button class="buttons">
+          <img src="../../../assets/Icons/AddNotesIcons/archive_FILL0_wght400_GRAD0_opsz24 (1).svg" class="ArchiveNoteIcon">
+          </button>
+        </div>
+        <div class="MoreIconDiv">
+          <button class="buttons">
+            <img src="../../../assets/Icons/AddNotesIcons/more_vert_FILL0_wght400_GRAD0_opsz24.svg" class="MoreOptionsIcon">
+          </button>
+        </div>
+        <div class="UndoIconDiv">
+          <button class="UndoRedoButtons" type="button" [disabled]="isDisabled">
+            <img type="button" src="../../../assets/Icons/AddNotesIcons/undo_FILL0_wght400_GRAD0_opsz24.svg" class="UndoIcon">
+          </button>
+        </div>
+        <div class="RedoIconDiv">
+          <button class="UndoRedoButtons" [disabled]="isDisabled">
+            <img src="../../../assets/Icons/AddNotesIcons/redo_FILL0_wght400_GRAD0_opsz24.svg" class="RedoIcon">
+          </button>
+        </div>
+        <div class="closebuttondiv">
+          <button type="button" class="CloseButton"(click)="show()">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container class="Layout2" *ngIf="showContainer">
+    <div class="Layout-2-1">
+      <div class="InputTextLayout1">
+        <input class="inputText" type="text" placeholder="Take a note" (focus)="show()">
+      </div>
+      <div class="Icons">
+        <div class="newList">
+          <button class="buttonIcon">
+            <img src="../../../assets/Icons/AddNotesIcons/check_box_FILL0_wght400_GRAD0_opsz24.svg" class="buttonIcon">
+          </button>
+        </div>
+        <div class="BrushDiv">
+          <button class="buttonIcon">
+            <img src="../../../assets/Icons/AddNotesIcons/brush_FILL0_wght400_GRAD0_opsz24.svg" class="buttonIcon">
+          </button>
+        </div>
+        <div class="ImageDiv">
+          <button class="buttonIcon">
+            <img src="../../../assets/Icons/AddNotesIcons/image_FILL0_wght400_GRAD0_opsz24.svg" class="buttonIcon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

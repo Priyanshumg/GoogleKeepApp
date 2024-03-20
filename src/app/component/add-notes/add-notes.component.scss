@@ -1,0 +1,173 @@
+.AddNotes
+{
+    margin-left: 200px;
+    margin-top: 100px;
+    // background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.TitleDiv
+{
+  margin-top: 5px;
+  display: flex;
+  width: 1fr;
+  align-items: center;
+  padding-right: 10px;
+}
+.Titleinput
+{
+  height: 40px;
+  width: 600px;
+  border-width: 0px;
+  padding-left: 20px;
+}
+
+.Titleinput::placeholder, .DescriptionInput::placeholder
+{
+  font-weight: bold;
+  color: rgb(136, 133, 133);
+}
+
+.Titleinput:focus, .DescriptionInput:focus
+{
+  outline: none;
+}
+
+.PinIcon
+{
+  height: 30px;
+}
+
+.layout
+{
+  width: 600px;
+  height: 150px;
+  // background-color: red;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.DescriptionDiv
+{
+  flex: 1;
+}
+
+.DescriptionInput
+{
+  width: 93.8%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-width: 0px;
+  padding-left: 20px;
+}
+
+.AllIconsDiv
+{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: end;
+}
+
+.RedoIcon,
+.UndoIcon,
+.MoreOptionsIcon,
+.ArchiveNoteIcon,
+.AddImageIcon,
+.AddColorIcon,
+.AddPersonIcon,
+.RemindMeIcon
+{
+  width: 20px;
+}
+
+.CloseButton
+{
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  border-width: 0px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.CloseButton:hover
+{
+background-color: rgba(248, 248, 248, 0.845);
+}
+
+.buttons, .UndoRedoButtons
+{
+  background-color: white;
+  border-width: 0px;
+  cursor: pointer;
+  border-radius: 13px;
+  padding-top: 5px;
+}
+
+.buttons:hover,.UndoRedoButtons:hover
+{
+  background-color: rgb(236, 233, 233);
+}
+
+.Layout-2-1
+{
+  width: 600px;
+  height: 50px;
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.Icons
+{
+  margin-top: 8px;
+  display: flex;
+}
+
+.inputTextLayout1
+{
+  margin-top: 3px;
+  height: 40px;
+  width: 460px;
+  background-color: white;
+}
+
+.inputText
+{
+  margin-top:3px;
+  margin-left: 5px;
+  width: 450px;
+  height: 40px;
+  border-width: 0px;
+  padding-left: 10px;
+}
+
+.Icons
+{
+  width: fit-content;
+  display: flex;
+  width: 100px;
+  margin-right: 20px;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.buttonIcon
+{
+  background-color: white;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+}
