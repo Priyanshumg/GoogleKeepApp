@@ -29,8 +29,10 @@ export class LoginPageComponent {
     //     alert(response.message);
     //   }
     // });
+    debugger;
     this.http.post("https://localhost:44347/api/User/Login", this.loginobj).subscribe((response: any) => {
       this.router.navigateByUrl('/dashboard');
+      localStorage.setItem('token', response.data);
       alert("Login Successful");
     }
     ,(error:any)=>{
