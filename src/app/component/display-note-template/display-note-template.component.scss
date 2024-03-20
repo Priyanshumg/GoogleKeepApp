@@ -1,0 +1,74 @@
+.Main{
+  margin-left: 200px;
+}
+
+.LayoutDisplay{
+  background-color: white;
+  border: 1px solid rgb(230, 229, 229);
+  border-radius: 10px;
+  width: 200px;
+  height: 500px;
+  transition: 0.10s;
+}
+.LayoutDisplay:hover{
+  border: 1px solid grey;
+}
+
+
+.TitlePinDiv{
+  // background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.PinImage{
+  cursor: pointer;
+}
+
+.Title,.PinDiv{
+  width: 1fr;
+}
+
+.Title{
+  margin-left: 10px;
+}
+
+.PinImage{
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.DescriptionDiv{
+  // background-color: aqua;
+  width: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.IconsDiv
+{
+  // background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.AllIcons{
+  width: 15px;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.AllIcons:hover{
+  background-color: rgb(215, 212, 212);
+}
+
+.AllIcons:active{
+  background-color: white;
+}
