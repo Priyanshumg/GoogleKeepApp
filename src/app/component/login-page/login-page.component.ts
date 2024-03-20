@@ -21,18 +21,25 @@ export class LoginPageComponent {
   }
 
   OnNext() {
+    // this.http.post("https://localhost:44347/api/User/Login", this.loginobj).subscribe((response: any) => {
+    //   this.router.navigateByUrl('/dashboard');
+    //   if (response.result) {
+    //     alert("Login Successful");
+    //   } else {
+    //     alert(response.message);
+    //   }
+    // });
     this.http.post("https://localhost:44347/api/User/Login", this.loginobj).subscribe((response: any) => {
-      if (response.result) {
-        alert("Login Successful");
-        this.router.navigateByUrl('/dashboard');
-      } else {
-        alert(response.message);
-      }
+      this.router.navigateByUrl('/dashboard');
+      alert("Login Successful");
+    }
+    ,(error:any)=>{
+      alert(error.message);
     });
   }
 
   OnCreate() {
-    
+
   }
 }
 
