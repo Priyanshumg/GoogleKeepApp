@@ -9,10 +9,10 @@ export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginPageComponent },
     {
-        path: '',
+        path: 'dashboard',
         component: GoogleAppComponentComponent,
         children: [
-            { path: 'dashboard', component: DashboardComponent }
+            { path: 'top', component: DashboardComponent }
         ]
     },
     { path: 'create', component: CreateNewAccountComponent }
