@@ -3,39 +3,44 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { DashboardComponent } from '../dashboard/dashboard.component';
+import { CreateNewAccountComponent } from '../create-new-account/create-new-account.component';
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [FormsModule, HttpClientModule],
+  imports: [FormsModule, HttpClientModule, DashboardComponent, CreateNewAccountComponent],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss'
 })
 export class LoginPageComponent {
-  loginobj:login;
-  constructor(private http: HttpClient, private router: Router){
-    this.loginobj = new login;
+  loginobj: Login;
+
+  constructor(private http: HttpClient, private router: Router) {
+    this.loginobj = new Login();
   }
 
-  OnNext(){
-    // debugger;
-    this.http.post("https://localhost:44347/api/User/Login",this.loginobj).subscribe((response:any) => {
-      if (response.result){
-        alert("Login Successfull");
+  OnNext() {
+    this.http.post("https://localhost:44347/api/User/Login", this.loginobj).subscribe((response: any) => {
+      if (response.result) {
+        alert("Login Successful");
         this.router.navigateByUrl('/dashboard');
+      } else {
+        alert(response.message);
       }
-      else{
-        alert(response.message)
-      }
-    })
+    });
+  }
+
+  OnCreate() {
+    
   }
 }
 
-export class login{
+export class Login {
   user_Email: string;
   user_Passwords: string;
 
-  constructor(){
+  constructor() {
     this.user_Email = '';
     this.user_Passwords = '';
   }
